@@ -14,10 +14,10 @@ public class TankDrivetrain extends DifferentialDrive implements Subsystem {
             MotorControllerGroup left, right;
 
             left = new MotorControllerGroup(EzTalonFX.createListFromIDs(frc.robot.constants.Ports.can.drivetrain.LEFTS));
-            left.setInverted(false);
+            left.setInverted(true);
 
             right = new MotorControllerGroup(EzTalonFX.createListFromIDs(frc.robot.constants.Ports.can.drivetrain.RIGHTS));
-            right.setInverted(true);
+            right.setInverted(false);
 
             instance = new TankDrivetrain(left, right);
         }

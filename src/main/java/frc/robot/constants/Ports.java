@@ -6,8 +6,8 @@ import java.util.List;
 public class Ports {
     public static class can {
         public static class drivetrain {
-            public static final List<Integer> LEFTS = Arrays.asList(1, 2);
-            public static final List<Integer> RIGHTS = Arrays.asList(3, 4);
+            public static final int[] LEFTS = {2, 3};
+            public static final int[] RIGHTS = {1, 13};
         }
     }
     public static class driver_inputs {
