@@ -25,6 +25,6 @@ public class TankDrivetrain extends DifferentialDrive implements Subsystem {
     }
 
     public void curvatureDrive(double xSpeed, double zRotation) {
-        this.curvatureDrive(xSpeed, zRotation, Math.abs(xSpeed) < 0.1);
+        this.curvatureDrive(xSpeed*Math.abs(xSpeed), zRotation, Math.abs(xSpeed) < 0.1);
     }
 }
