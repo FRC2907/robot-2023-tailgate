@@ -1,8 +1,5 @@
 package frc.robot.constants;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class Ports {
     public static class can {
         public static class drivetrain {
